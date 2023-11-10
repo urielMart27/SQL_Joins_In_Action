@@ -20,6 +20,12 @@ ON favorite_movie_id = movie_id;
 -- Do a right join to see all records from the users table and matching records from the movies table.
 -- EXPECTED RESULT: 16 Rows Returned
 
+SELECT * 
+FROM movies
+RIGHT JOIN users
+ON favorite_movie_id = movie_id
+WHERE user_id IS NOT NULL;
+
 
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 3 >>>>>>>>>>>>>>>>>>>>>>>
