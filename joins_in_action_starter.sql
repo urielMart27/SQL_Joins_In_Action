@@ -54,7 +54,10 @@ LIMIT 1;
 -- Get the average Rotten Tomatoes score of all movies that are favorited by a user.
 -- EXPECTED RESULT: 52.21
 
-
+SELECT ROUND (AVG(rotten_tomatoes),2) AS Average_Rotten_Tomatoes 
+FROM movies 
+INNER JOIN users 
+ON favorite_movie_id = movie_id; 
 
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 6 >>>>>>>>>>>>>>>>>>>>>>>
