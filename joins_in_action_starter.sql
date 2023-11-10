@@ -42,13 +42,15 @@ ON movie_id = favorite_movie_id;
 -- EXPECTED RESULT: Disney
 
 
+
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 5 >>>>>>>>>>>>>>>>>>>>>>>
 -- Get the average Rotten Tomatoes score of all movies that are favorited by a user.
 -- EXPECTED RESULT: 52.21
+
+
 
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 6 >>>>>>>>>>>>>>>>>>>>>>>
 -- Determine which two movies are have duplicate entries in the dataset. (HINT: No join is needed for this problem)
 -- EXPECTED RESULT: Mamma Mia!, Gnomeo and Juliet
 -- It is important to be able to identify dirty data within a dataset!
-
