@@ -64,3 +64,8 @@ ON favorite_movie_id = movie_id;
 -- Determine which two movies are have duplicate entries in the dataset. (HINT: No join is needed for this problem)
 -- EXPECTED RESULT: Mamma Mia!, Gnomeo and Juliet
 -- It is important to be able to identify dirty data within a dataset!
+
+SELECT film, COUNT(*) 
+FROM movies
+GROUP BY film
+HAVING COUNT(*) = 2;
