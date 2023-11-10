@@ -32,6 +32,10 @@ WHERE user_id IS NOT NULL;
 -- Do a inner join to get only the rows from the movies tables that have matching rows in the users tables.
 -- EXPECTED RESULT: 14 Rows Returned
 
+SELECT * 
+FROM users
+INNER JOIN movies 
+ON movie_id = favorite_movie_id;
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 4 >>>>>>>>>>>>>>>>>>>>>>>
 -- Determine which lead studio's movies are favorited by users the most.
