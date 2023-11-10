@@ -41,6 +41,13 @@ ON movie_id = favorite_movie_id;
 -- Determine which lead studio's movies are favorited by users the most.
 -- EXPECTED RESULT: Disney
 
+SELECT lead_studio, Count(user_id) AS favorite_count 
+FROM movies 
+INNER JOIN users  
+ON favorite_movie_id = movie_id 
+GROUP BY lead_studio 
+ORDER BY favorite_count DESC 
+LIMIT 1; 
 
 
 -- <<<<<<<<<<<<<<<<<<<<<< PROBLEM 5 >>>>>>>>>>>>>>>>>>>>>>>
